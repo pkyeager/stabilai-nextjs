@@ -159,9 +159,9 @@ export default function Home() {
               You shape your journey by pinpointing focus areas and weak spots.
             </p>
             <p className={subtitle()}>
-              With our intuitive AI system, every lift isn't just a
-              movement—it's a deliberate action driving you closer to your
-              fitness aspirations.
+              With our intuitive AI system, every lift isnt just a movement— its
+              a deliberate action driving you closer to your fitness
+              aspirations.
             </p>
           </div>
         </div>
@@ -190,7 +190,7 @@ export default function Home() {
               limits and unlock your potential.
             </p>
             <p className={subtitle()}>
-              It's more than a workout; it's about unleashing your inner beast
+              It is more than a workout; it is about unleashing your inner beast
               and reaching new strength levels.
             </p>
             <p className={subtitle()}>
@@ -210,8 +210,8 @@ export default function Home() {
       <h2 className={title({ class: "mt-4" })}>Frequently Asked Questions</h2>
       <p className={subtitle({ class: "mt-2" })}>
         Here are some common questions from our community. If you have any more
-        inquiries, suggestions, or feedback, we'd love to hear from you! Feel
-        free to reach out anytime:{" "}
+        inquiries, suggestions, or feedback, we would love to hear from you!
+        Feel free to reach out anytime:{" "}
         <a href="mailto:support@stabil.ai" className="gradient-text">
           support@stabil.ai
         </a>
@@ -243,7 +243,7 @@ export default function Home() {
           >
             We stand out with our commitment to providing a premium experience
             at no cost. Enjoy personalized plans, advanced features, and a
-            supportive community—all for free!"
+            supportive community—all for free!
           </AccordionItem>
           <AccordionItem
             key="4"
@@ -260,13 +260,13 @@ export default function Home() {
             title="Can I interact with other users or receive support from a community?"
           >
             Absolutely! Connect with other users, share experiences, and receive
-            support from our vibrant community—all within our free app. It's
+            support from our vibrant community—all within our free app. It is
             fitness, friendship, and fun, all in one place!
           </AccordionItem>
         </Accordion>
         <div className="flex justify-center items-center mt-4">
-  <h2 className="gradient-text text-4xl">Ready to get started?</h2>
-</div>
+          <h2 className="gradient-text text-4xl">Ready to get started?</h2>
+        </div>
         <div className="flex justify-center items-center mt-4 space-x-5">
           <a
             href="https://apps.apple.com/your-app-url"
