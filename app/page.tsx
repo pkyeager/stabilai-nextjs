@@ -4,15 +4,20 @@ import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
-import { GithubIcon } from "@/components/icons";
+import {Image} from "@nextui-org/react";
 
 export default function Home() {
   return (
     <section className="flex flex-col justify-center gap-4 py-8 md:py-10">
-      <div className="inline-block text-left">
-        <h1 className={title({ class: "text-center" })}>
-          Bye Cookie Cutters🍪
-        </h1>
+      <h2 className={title({ class: "mt-4" })}> 
+        stabil<span className={title({ color: "violet" })}>.ai</span>
+      </h2>
+      <div className="flex justify-between items-center">
+        <div className="inline-block text-left">
+          <h1 className={title({ class: "text-center" })}>
+            Bye Cookie Cutters 🍪
+          </h1>
+        </div>
       </div>
 
       <div className="inline-block text-left">
@@ -33,7 +38,7 @@ export default function Home() {
           isExternal
           href={siteConfig.links.docs}
           className={buttonStyles({
-            color: "primary",
+            color: "secondary",
             radius: "full",
             variant: "shadow",
           })}
