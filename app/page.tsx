@@ -14,22 +14,28 @@ import {
   AccordionItem,
 } from "@nextui-org/react";
 import React from "react";
+import { TypeAnimation } from "react-type-animation";
+import { motion } from "framer-motion";
+import { useEffect, useState } from "react";
 
 export default function Home() {
   const phone1Img = "/assets/images/phone1.png"; // not used now buggy
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
   return (
-    <div className="flex flex-col gap-2">
+    <div className="flex-1 flex-col gap-2">
       <h2 className={title({ class: "mt-4" })}>
         stabil<span className={title({ color: "violet" })}>.ai</span>
       </h2>
-      <div className="flex gap-3">
+      <div className="flex mb-24">
         <div className="flex-col justify-center gap-4 py-8 md:py-10">
           <div className="inline-block text-left">
-            <h1 className={title({ class: "text-center" })}>
-              Bye Cookie Cutters 🍪
-            </h1>
+            <motion.h1
+              className={title({ class: "text-center" })}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              transition={{ duration: 2 }}
+            >
+              Bye Cookie Cutter Plans 🍪
+            </motion.h1>
           </div>
 
           <div className="inline-block text-left">
@@ -56,28 +62,28 @@ export default function Home() {
             <Image
               isZoomed
               className="rounded-lg shadow-xl"
-              width={80}
-              src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+              width={120}
+              src="https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="SDU logo"
             />
             <Image
               isZoomed
               className="rounded-lg shadow-xl"
-              width={80}
-              src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+              width={120}
+              src="https://images.unsplash.com/photo-1611262588024-d12430b98920?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
               alt="TH Lübeck Logo"
             />
           </div>
         </div>
-        {/* Scale and replace this later */}
         <Image
           isZoomed
           className="rounded-lg shadow-xl"
-          width={1600}
-          src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
+          width={2000}
+          src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
           alt="This is an image of the dashboard"
         />
       </div>
+      {/* Scale and replace this later */}
       <div className="flex justify-between space-x-4">
         <Card isHoverable>
           <CardHeader className="">
@@ -127,58 +133,172 @@ export default function Home() {
           </CardBody>
         </Card>
       </div>
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 items-center">
         <Image
           isZoomed
-          className="rounded-lg shadow-xl w-1/2"
-          src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
-          alt="Image description"
+          className="rounded-lg shadow-xl"
+          width={600}
+          src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="This is an image of the dashboard"
         />
-        <div className="w-1/2 ml-4">
-          <h2 className={title()}>Title</h2>
-          <p className={subtitle()}>This is some text.</p>
+        <div className="w-1/2 ml-4 item-center">
+          <h2 className={title()}>AI-Powered Personalized Training Plans 🤖</h2>
+          <div className="flex-col flex">
+            <p className={subtitle()}>
+              Unlock your potential with AI-driven training now.
+            </p>
+            <p className={subtitle()}>
+              Using your biometric data, we create customized workout plans
+              aligned with your goals.
+            </p>
+            <p className={subtitle()}>
+              Our intelligent algorithms adjust weights, reps, and intensity for
+              peak performance.
+            </p>
+            <p className={subtitle()}>
+              You shape your journey by pinpointing focus areas and weak spots.
+            </p>
+            <p className={subtitle()}>
+              With our intuitive AI system, every lift isn't just a
+              movement—it's a deliberate action driving you closer to your
+              fitness aspirations.
+            </p>
+          </div>
         </div>
       </div>
 
-      <div className="flex justify-between mt-4">
+      <div className="flex justify-between mt-4 items-center">
         <div className="w-1/2 mr-4">
-          <h2 className={title()}>Title</h2>
-          <p className={subtitle()}>This is some text.</p>
+          <h2 className={title()}>
+            Unleash Your Potential with Adaptive AI Performance ⚡
+          </h2>
+          <div className="">
+            <p className={subtitle()}>
+              Experience the power of our AI performance system, transforming
+              your workouts like never before.
+            </p>
+            <p className={subtitle()}>
+              Daily, we calculate your athlete score, fine-tuning your regimen
+              for optimal progress.
+            </p>
+            <p className={subtitle()}>
+              Our AI dynamically adjusts weights and recalibrates based on your
+              feedback, ensuring every session is effective.
+            </p>
+            <p className={subtitle()}>
+              Prepare for a surge of performance enhancement as you surpass your
+              limits and unlock your potential.
+            </p>
+            <p className={subtitle()}>
+              It's more than a workout; it's about unleashing your inner beast
+              and reaching new strength levels.
+            </p>
+            <p className={subtitle()}>
+              Welcome to the future of fitness, where every rep propels you
+              towards greatness.
+            </p>
+          </div>
         </div>
         <Image
           isZoomed
-          className="rounded-lg shadow-xl w-1/2"
-          src="https://nextui-docs-v2.vercel.app/images/fruit-1.jpeg"
-          alt="Image description"
+          className="rounded-lg shadow-xl"
+          width={600}
+          src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt="This is an image of the dashboard"
         />
       </div>
       <h2 className={title({ class: "mt-4" })}>Frequently Asked Questions</h2>
       <p className={subtitle({ class: "mt-2" })}>
-        Here are some common questions about our App.
+        Here are some common questions from our community. If you have any more
+        inquiries, suggestions, or feedback, we'd love to hear from you! Feel
+        free to reach out anytime:{" "}
+        <a href="mailto:support@stabil.ai" className="gradient-text">
+          support@stabil.ai
+        </a>
       </p>
 
       <div className="mt-4">
-        <h2 className={subtitle()}>Ready to get started?</h2>
-        <Accordion selectionMode="multiple">
-          <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
-            {defaultContent}
+        <Accordion selectionMode="single">
+          <AccordionItem
+            key="1"
+            aria-label="Accordion 1"
+            title="Is the app free?"
+          >
+            Yes, our app is completely free to download and use! Enjoy all the
+            features and benefits without any cost.
           </AccordionItem>
-          <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
-            {defaultContent}
+          <AccordionItem
+            key="2"
+            aria-label="Accordion 2"
+            title="Is this app suitable for beginners?"
+          >
+            Absolutely! Our user-friendly interface and beginner-friendly
+            workouts make it perfect for those new to fitness. Get started on
+            your journey hassle-free!
           </AccordionItem>
-          <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
-            {defaultContent}
+          <AccordionItem
+            key="3"
+            aria-label="Accordion 3"
+            title="What sets this app apart from other fitness apps on the market?"
+          >
+            We stand out with our commitment to providing a premium experience
+            at no cost. Enjoy personalized plans, advanced features, and a
+            supportive community—all for free!"
+          </AccordionItem>
+          <AccordionItem
+            key="4"
+            aria-label="Accordion 4"
+            title="Can I track my progress and see how I'm improving over time?"
+          >
+            Of course! Our app includes comprehensive progress tracking
+            features, allowing you to monitor your performance and see your
+            improvements over time. Stay motivated with tangible results!
+          </AccordionItem>
+          <AccordionItem
+            key="5"
+            aria-label="Accordion 5"
+            title="Can I interact with other users or receive support from a community?"
+          >
+            Absolutely! Connect with other users, share experiences, and receive
+            support from our vibrant community—all within our free app. It's
+            fitness, friendship, and fun, all in one place!
           </AccordionItem>
         </Accordion>
-        <div className="flex gap-2 mt-2">
-          <Button color="primary" variant="shadow">
-            App Store Icon
-          </Button>
-          <Button color="secondary" variant="shadow">
-            Google Play Icon
-          </Button>
+        <div className="flex justify-center items-center mt-4">
+  <h2 className="gradient-text text-4xl">Ready to get started?</h2>
+</div>
+        <div className="flex justify-center items-center mt-4 space-x-5">
+          <a
+            href="https://apps.apple.com/your-app-url"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg" />
+          </a>
+          <a
+            href="https://play.google.com/store/apps/details?id=your-app-id"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              alt="Get it on Google Play"
+            />
+          </a>
         </div>
       </div>
+
+      <style jsx>{`
+        .glow {
+          box-shadow: 0 0 10px #9c27b0, 0 0 20px #9c27b0, 0 0 30px #9c27b0,
+            0 0 40px #9c27b0;
+        }
+        .gradient-text {
+          background: linear-gradient(to right, violet, blue);
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+        }
+      `}</style>
     </div>
   );
 }
