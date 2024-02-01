@@ -65,9 +65,9 @@ export default function Home() {
             repeat={Infinity}
           />
         </div>
-        <div className="flex h-screen w-full">
-        <Spline scene="https://prod.spline.design/9hvYOC9fXh5J1ogG/scene.splinecode" />
-        </div>
+        {/* <div className="flex h-screen w-full"> */}
+        {/* <Spline scene="https://prod.spline.design/9hvYOC9fXh5J1ogG/scene.splinecode" /> */}
+        {/* </div> */}
         <div className="flex h-screen items-center">
           <div className="flex-col justify-center gap-4 py-8 w-1/2">
             <div className="inline-block text-left">
