@@ -18,6 +18,8 @@ import { TypeAnimation } from "react-type-animation";
 import { motion, useAnimation } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
+import { Application } from "@splinetool/runtime";
+import Spline from "@splinetool/react-spline";
 
 export default function Home() {
   const phone1Img = "/assets/images/phone1.png"; // not used now buggy
@@ -33,7 +35,7 @@ export default function Home() {
   }, [controls, inView]);
 
   return (
-    <div className="flex-1 flex-col gap-2">
+    <div className="flex-1 flex-col gap-2 h-[850]">
       <motion.div
         ref={ref}
         animate={controls}
@@ -43,9 +45,13 @@ export default function Home() {
           hidden: { opacity: 0, scale: 0.9 },
         }}
       >
-        <div className="h-screen text-center flex my-auto items-center">
+        <div className="h-screen relative flex-col flex">
+          <Spline
+            className="w-full h-1/2 align-top top-[600px]"
+            scene="https://prod.spline.design/AYItJrbMLHQRViW0/scene.splinecode"
+          />
           <TypeAnimation
-            className="text-9xl text-center font-bold shadow-2xl"
+            className="text-6xl text-center font-bold shadow-2xl"
             cursor={false}
             sequence={[
               "Welcome to the future of strength training.",
@@ -54,25 +60,19 @@ export default function Home() {
               250,
             ]}
             wrapper="span"
-            speed={25}
+            speed={50}
             style={{ color: "text-gradient" }}
             repeat={Infinity}
           />
         </div>
-        <div className="flex mb-24 h-screen items-center">
-          <div className="flex-col justify-center gap-4 py-8 md:py-10">
+        <div className="flex h-screen w-full">
+        <Spline scene="https://prod.spline.design/9hvYOC9fXh5J1ogG/scene.splinecode" />
+        </div>
+        <div className="flex h-screen items-center">
+          <div className="flex-col justify-center gap-4 py-8 w-1/2">
             <div className="inline-block text-left">
-              <motion.h1
-                className={title({ class: "text-center" })}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{ duration: 2 }}
-              >
-                Bye Cookie Cutter Plans 🍪
-              </motion.h1>
+              <h1 className={title()}>Bye Cookie Cutter</h1>
             </div>
-
-
             <div className="inline-block text-left">
               <h1 className={title()}>Hello Personal&nbsp;</h1>
               <h1 className={title({ color: "violet" })}>AI Coach</h1>
@@ -109,13 +109,17 @@ export default function Home() {
               />
             </div>
           </div>
-          <Image
+          <Spline
+            className="w-1/2"
+            scene="https://prod.spline.design/FIu9ekKNtvMrUQ9z/scene.splinecode"
+          />
+          {/* <Image
             isZoomed
-            className="rounded-lg shadow-xl"
-            width={2000}
+            className="rounded-lg shadow-xl flex"
+            width={1200}
             src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="This is an image of the dashboard"
-          />
+          /> */}
         </div>
         {/* Scale and replace this later */}
         {/* <div className="flex justify-between space-x-4 ">
@@ -168,13 +172,14 @@ export default function Home() {
         </Card>
       </div> */}
         <div className="flex justify-between mt-4 items-center h-screen">
-          <Image
+          {/* <Image
             isZoomed
             className="rounded-lg shadow-xl"
-            width={600}
+            width={400}
             src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="This is an image of the dashboard"
-          />
+          /> */}
+          <Spline scene="https://prod.spline.design/FIu9ekKNtvMrUQ9z/scene.splinecode" />
           <div className="w-1/2 ml-4 item-center">
             <h2 className={title()}>
               AI-Powered Personalized Training Plans 🤖
@@ -236,13 +241,14 @@ export default function Home() {
               </p>
             </div>
           </div>
-          <Image
+          {/* <Image
             isZoomed
-            className="rounded-lg shadow-xl"
-            width={600}
+            className="rounded-lg shadow-xl mt-24"
+            width={400}
             src="https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?q=80&w=967&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
             alt="This is an image of the dashboard"
-          />
+          /> */}
+          <Spline scene="https://prod.spline.design/FIu9ekKNtvMrUQ9z/scene.splinecode" />
         </div>
         <div className="h-screen justify-center  my-auto flex flex-col space-y-4">
           <h2 className={title({ class: "mt-4 text-left" })}>
@@ -341,10 +347,6 @@ export default function Home() {
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
           }
-
-          // .h-screen {
-          //   background: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
-          // }
         `}</style>
       </motion.div>
     </div>
