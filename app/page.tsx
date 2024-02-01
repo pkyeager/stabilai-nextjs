@@ -1,5 +1,5 @@
 "use client";
-import React from "react";
+import React, { useRef, useEffect, useState } from "react";
 import {
   motion,
   useAnimation,
@@ -7,13 +7,39 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import AnimatedCursor from "react-animated-cursor";
 import Hero from "@/components/hero";
 import Intro from "@/components/intro";
 import Features from "@/components/features";
 import Faq from "@/components/faq";
+
+const Section = ({ children }) => {
+  const controls = useAnimation();
+  const { ref, inView } = useInView();
+
+  useEffect(() => {
+    if (inView) {
+      controls.start("visible");
+    } else {
+      controls.start("hidden");
+    }
+  }, [controls, inView]);
+
+  return (
+    <motion.div
+      ref={ref}
+      animate={controls}
+      initial="hidden"
+      variants={{
+        visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
+        hidden: { opacity: 0, scale: 0.8, transition: { duration: 0.3 } },
+      }}
+    >
+      {children}
+    </motion.div>
+  );
+};
 
 export default function Home() {
   const [isLoading, setIsLoading] = useState(true);
@@ -24,25 +50,11 @@ export default function Home() {
     [0, 1],
     ["rgba(255,255,255)", "rgba(156,39,176)"]
   );
-  const controls = useAnimation();
-  const { ref, inView } = useInView({
-    triggerOnce: true,
-  });
-
-  useEffect(() => {
-    if (inView) {
-      controls.start("visible");
-    }
-  }, [controls, inView]);
 
   useEffect(() => {
     setTimeout(() => {
-      3000;
       setIsLoading(false);
-    });
-    // window.onload = () => {
-    //   setIsLoading(false);
-    // };
+    }, 3000);
   }, []);
 
   if (isLoading) {
@@ -50,7 +62,7 @@ export default function Home() {
   }
 
   return (
-    <div className="flex-1  gap-2 h-[850] w-full">
+    <div className="flex-1 w-full h-full">
       <AnimatedCursor color="156,39,176" />
       <motion.div
         style={{
@@ -65,10 +77,18 @@ export default function Home() {
           borderRadius: "10px",
         }}
       />
-      <Hero />
-      <Intro />
-      <Features />
-      <Faq />
+      <Section>
+        <Hero />
+      </Section>
+      <Section>
+        <Intro />
+      </Section>
+      <Section>
+        <Features />
+      </Section>
+      <Section>
+        <Faq />
+      </Section>
     </div>
   );
 }
