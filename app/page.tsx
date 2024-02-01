@@ -20,6 +20,7 @@ import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Application } from "@splinetool/runtime";
 import Spline from "@splinetool/react-spline";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   const phone1Img = "/assets/images/phone1.png"; // not used now buggy
@@ -36,6 +37,7 @@ export default function Home() {
 
   return (
     <div className="flex-1 flex-col gap-2 h-[850]">
+      <AnimatedCursor color="156,39,176" />
       <motion.div
         ref={ref}
         animate={controls}
