@@ -13,7 +13,7 @@ import Hero from "@/components/hero";
 import Intro from "@/components/intro";
 import Features from "@/components/features";
 import Faq from "@/components/faq";
-const Section = ({ children }) => {
+const Section = ({ children }: { children: React.ReactNode }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
 
