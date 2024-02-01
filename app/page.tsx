@@ -15,7 +15,13 @@ import {
 } from "@nextui-org/react";
 import React from "react";
 import { TypeAnimation } from "react-type-animation";
-import { motion, useAnimation } from "framer-motion";
+import {
+  motion,
+  useAnimation,
+  useScroll,
+  useSpring,
+  useTransform,
+} from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
 import { Application } from "@splinetool/runtime";
@@ -23,7 +29,16 @@ import Spline from "@splinetool/react-spline";
 import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
-  const phone1Img = "/assets/images/phone1.png"; // not used now buggy
+  const { scrollYProgress } = useScroll();
+
+  const scaleX = useSpring(scrollYProgress);
+
+  const background = useTransform(
+    scrollYProgress,
+    [0, 1],
+    ["rgba(255,255,255)", "rgba(156,39,176)"]
+  );
+
   const controls = useAnimation();
   const { ref, inView } = useInView({
     triggerOnce: true,
@@ -38,6 +53,17 @@ export default function Home() {
   return (
     <div className="flex-1 flex-col gap-2 h-[850]">
       <AnimatedCursor color="156,39,176" />
+      <motion.div
+        style={{
+          scaleX,
+          transformOrigin: "left",
+          background,
+          position: "sticky",
+          top: 0,
+          width: "100%",
+          height: "20px",
+        }}
+      />
       <motion.div
         ref={ref}
         animate={controls}
@@ -183,9 +209,7 @@ export default function Home() {
           /> */}
           <Spline scene="https://prod.spline.design/FIu9ekKNtvMrUQ9z/scene.splinecode" />
           <div className="w-1/2 ml-4 item-center">
-            <h2 className={title()}>
-              AI-Powered Personalized Training Plans 🤖
-            </h2>
+            <h2 className={title()}>AI Powered 🤖</h2>
             <div className="flex-col flex">
               <p className={subtitle()}>
                 Unlock your potential with AI-driven training now.
@@ -213,9 +237,7 @@ export default function Home() {
 
         <div className="flex justify-between mt-4 items-center h-screen">
           <div className="w-1/2 mr-4">
-            <h2 className={title()}>
-              Unleash Your Potential with Adaptive AI Performance ⚡
-            </h2>
+            <h2 className={title()}>Responsive AI Assistant ⚡</h2>
             <div className="">
               <p className={subtitle()}>
                 Experience the power of our AI performance system, transforming
