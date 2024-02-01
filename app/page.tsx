@@ -13,7 +13,6 @@ import Hero from "@/components/hero";
 import Intro from "@/components/intro";
 import Features from "@/components/features";
 import Faq from "@/components/faq";
-
 const Section = ({ children }) => {
   const controls = useAnimation();
   const { ref, inView } = useInView();
@@ -35,6 +34,7 @@ const Section = ({ children }) => {
         visible: { opacity: 1, scale: 1, transition: { duration: 0.3 } },
         hidden: { opacity: 0, scale: 0.8, transition: { duration: 0.3 } },
       }}
+      className="my-auto" 
     >
       {children}
     </motion.div>
