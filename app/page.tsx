@@ -1,27 +1,21 @@
 "use client";
-import React, { useRef, useEffect, useState } from "react";
-import {
-  motion,
-  useAnimation,
-  useScroll,
-  useSpring,
-  useTransform,
-} from "framer-motion";
-import { useInView } from "react-intersection-observer";
-import AnimatedCursor from "react-animated-cursor";
+import React from "react";
 import Hero from "@/components/hero";
-import Intro from "@/components/intro";
 import Features from "@/components/features";
 import Faq from "@/components/faq";
 import Header from "@/components/header";
+import Credits from "@/components/credits";
+import Footer from "@/components/footer";
 
 export default function Home() {
   return (
-    <div className="flex-1 w-full h-full">
+    <div className="flex-1 w-full">
       <Header />
       <Hero />
       <Features />
+      <Credits />
       <Faq />
+      <Footer />
     </div>
   );
 }
