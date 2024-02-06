@@ -19,7 +19,7 @@ export default function Hero() {
       <h1 className="text-6xl sm:text-9xl font-bold text-white z-10 hover:text-purple-500 transition-colors duration-200">
         Our Mission.
       </h1>
-      <h2 className="mt-10 text-xl sm:text-3xl font-bold text-white z-10 hover:text-purple-500 transition-colors duration-200">
+      <h2 className="mt-10 text-xl sm:text-3xl font-bold text-white z-10 hover:text-purple-500 transition-colors duration-200 w-1/2">
         Your personal strength coach in your pocket. With AI-driven workouts and
         real-time feedback, unleash your strength potential like never before.
       </h2>

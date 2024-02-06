@@ -7,7 +7,7 @@ export default function Features() {
 
   return (
     <div className="flex-1">
-      <section className="flex items-center justify-center h-screen">
+      <section className="flex items-center justify-center h-screen max-md:flex-col">
         <div className="w-1/2 p-10 flex-row">
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Personalization.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Precision.</h2>

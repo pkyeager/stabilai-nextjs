@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Header() {
     return (
-        <header className="top-0 left-0 right-0 flex justify-between items-center p-5 bg-zinc-900">
+        <header className="top-0 left-0 right-0 flex justify-between items-center p-10 bg-zinc-900">
             <h1 className="text-4xl font-extrabold text-white">
                 <a href="/" className="hover:text-purple-600 transition-colors duration-200">stabil.ai</a>
             </h1>
