@@ -3,7 +3,7 @@ import React from "react";
 export default function Footer() {
     return (
         <footer className="bg-zinc-900 text-white py-10 px-5 clear-both mt-28">
-            <div className="flex flex-wrap justify-between">
+            <div className="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between items-center text-center sm:text-left">
                 <h2 className="text-2xl font-bold mb-8">stabil.ai</h2>
 
                 <div className="w-full sm:w-auto mb-8">
