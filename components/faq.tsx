@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="h-screen justify-center my-auto flex flex-col space-y-4 mt-16 px-4 sm:px-0">
+    <div className="h-auto justify-top my-auto flex flex-col space-y-4 mt-4 px-4 sm:px-8">
       <h2 className={title({ class: "mt-4 text-center" })}>
         Frequently Asked Questions
       </h2>
@@ -68,7 +68,7 @@ export default function Faq() {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="justify-center items-center mt-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
+      <div className="justify-center items-center mt-4 flex flex-col sm:flex-col space-y-4 sm:space-y-0 sm:space-x-5">
         <h2 className="text-4xl text-center hover:text-purple-500 transition-colors duration-200 hover:shadow-lg mt-4">
           Ready to get started?
         </h2>
