@@ -6,9 +6,9 @@ export default function Features() {
   const phoneImgPath = "/phone1.png";
 
   return (
-    <div className="flex-1">
-      <section className="flex items-center justify-center h-screen max-md:flex-col">
-        <div className="w-1/2 p-10 flex-row">
+    <div className="flex flex-col h-full">
+      <section className="flex flex-col sm:flex-row items-center justify-center h-full sm:h-auto py-10 sm:py-0">
+        <div className="w-full sm:w-1/2 p-10">
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Personalization.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Precision.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Efficient.</h2>
@@ -21,11 +21,11 @@ export default function Features() {
             goals.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg" />
+        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4" />
       </section>
 
-      <section className="flex items-center justify-center h-screen flex-row-reverse bg-zinc-900">
-        <div className="w-1/2 p-10">
+      <section className="flex flex-col sm:flex-row items-center justify-center h-full sm:h-auto py-10 sm:py-0 flex-row-reverse bg-zinc-900">
+        <div className="w-full sm:w-1/2 p-10">
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Intelligent.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Adaptive.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Responsive.</h2>
@@ -36,11 +36,11 @@ export default function Features() {
             every rep.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg" />
+        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-last sm:order-none p-4" />
       </section>
 
-      <section className="flex items-center justify-center h-screen">
-        <div className="w-1/2 p-10">
+      <section className="flex flex-col sm:flex-row items-center justify-center h-full sm:h-auto py-10 sm:py-0">
+        <div className="w-full sm:w-1/2 p-10">
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Social.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Community.</h2>
           <h2 className="text-4xl font-bold mb-4 hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">Support.</h2>
@@ -51,7 +51,7 @@ export default function Features() {
             growth.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg" />
+        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4" />
       </section>
     </div>
   );
