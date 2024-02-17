@@ -9,8 +9,8 @@ export default function Credits() {
                 talented students from
             </h2>
             <div className="flex justify-center items-center pb-4 space-x-5">
-                <img src={sduLogoPath} alt="SDU Logo" className="inline h-6 sm:h-12" />
-                <img src={thLuebeckLogoPath} alt="SDU Logo" className="inline h-6 sm:h-12" />
+                <img src={sduLogoPath} alt="SDU Logo" className="inline h-6 sm:h-12 filter grayscale hover:filter-none hover:text-purple-500 transition-colors duration-200" />
+                <img src={thLuebeckLogoPath} alt="SDU Logo" className="inline h-6 sm:h-12 filter grayscale hover:filter-none hover:text-purple-500 transition-colors duration-200" />
             </div>
         </div>
     );

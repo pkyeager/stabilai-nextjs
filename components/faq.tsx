@@ -7,7 +7,9 @@ import React from "react";
 export default function Faq() {
   return (
     <div className="h-auto justify-top my-auto flex flex-col space-y-4 mt-4 px-4 sm:px-8">
-      <h2 className={title({ class: "mt-4 text-center" })}>
+      <h2
+        className={title({ class: "mt-4 text-center hover:text-purple-500" })}
+      >
         Frequently Asked Questions
       </h2>
       <p className={subtitle({ class: "mt-2 text-center" })}>
@@ -25,7 +27,7 @@ export default function Faq() {
             className=""
             key="1"
             aria-label="Accordion 1"
-            title="Is the app free?"
+            title={<span className="font-bold">Is the app free?</span>}
           >
             Yes, our app is completely free to download and use! Enjoy all the
             features and benefits without any cost.
@@ -33,7 +35,11 @@ export default function Faq() {
           <AccordionItem
             key="2"
             aria-label="Accordion 2"
-            title="Is this app suitable for beginners?"
+            title={
+              <span className="font-bold">
+                Is this app suitable for beginners?
+              </span>
+            }
           >
             Absolutely! Our user-friendly interface and beginner-friendly
             workouts make it perfect for those new to fitness. Get started on
@@ -42,7 +48,11 @@ export default function Faq() {
           <AccordionItem
             key="3"
             aria-label="Accordion 3"
-            title="What sets this app apart from other fitness apps on the market?"
+            title={
+              <span className="font-bold">
+                What sets this app apart from other fitness apps on the market?
+              </span>
+            }
           >
             We stand out with our commitment to providing a premium experience
             at no cost. Enjoy personalized plans, advanced features, and a
@@ -51,7 +61,11 @@ export default function Faq() {
           <AccordionItem
             key="4"
             aria-label="Accordion 4"
-            title="Can I track my progress and see how I'm improving over time?"
+            title={
+              <span className="font-bold">
+                Can I track my progress and see how I am improving over time?
+              </span>
+            }
           >
             Of course! Our app includes comprehensive progress tracking
             features, allowing you to monitor your performance and see your
@@ -60,7 +74,12 @@ export default function Faq() {
           <AccordionItem
             key="5"
             aria-label="Accordion 5"
-            title="Can I interact with other users or receive support from a community?"
+            title={
+              <span className="font-bold">
+                Can I interact with other users or receive support from a
+                community?
+              </span>
+            }
           >
             Absolutely! Connect with other users, share experiences, and receive
             support from our vibrant community—all within our free app. It is
