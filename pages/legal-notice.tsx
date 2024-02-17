@@ -1,9 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 // ./pages/legal-notice.tsx
+// tailwindcss is currently not working here
 import React from "react";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+
 
 export default function LegalNotice() {
   return (
