@@ -18,7 +18,7 @@ export default function Hero() {
         Your personal strength coach in your pocket. With AI-driven workouts and
         real-time feedback, unleash your strength potential like never before.
       </h2>
-      <div className="flex flex-col sm:flex-row justify-center items-center mt-4 sm:space-x-5 z-10 space-y-5">
+      <div className="flex flex-col sm:flex-row justify-center items-center mt-4 sm:space-x-5 z-10 space-y-5 sm:space-y-0">
         <a
           href="https://apps.apple.com/your-app-url"
           target="_blank"
