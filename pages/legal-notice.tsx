@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
-// pages/legal-notice.tsx
+// ./pages/legal-notice.tsx
 import React from "react";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
 
-const LegalNotice: React.FC = () => {
+export default function LegalNotice() {
   return (
     <div className="bg-zinc-900 text-white flex flex-col items-center justify-center h-screen w-screen fixed top-0 left-0">
       {/* <Header /> */}
@@ -78,9 +78,7 @@ const LegalNotice: React.FC = () => {
         We are not willing or obliged to participate in dispute resolution
         proceedings in front of a consumer arbitration board.
       </p>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
-};
-
-export default LegalNotice;
+}

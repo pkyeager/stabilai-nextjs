@@ -1,3 +1,4 @@
+
 import Link from "next/link";
 import React from "react";
 
@@ -23,9 +24,9 @@ export default function Footer() {
               </Link>
             </li>
             <li>
-              <a href="#" className="hover:underline">
-                Privacy
-              </a>
+              <Link legacyBehavior href="/privacy">
+                <a className="hover:underline">Privacy Policy</a>
+              </Link>
             </li>
             <li>
               <a href="#" className="hover:underline">
