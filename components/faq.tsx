@@ -6,7 +6,7 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="h-screen justify-center  my-auto flex flex-col space-y-4 mt-16">
+    <div className="h-screen justify-center my-auto flex flex-col space-y-4 mt-16 px-4 sm:px-0">
       <h2 className={title({ class: "mt-4 text-center" })}>
         Frequently Asked Questions
       </h2>
@@ -19,9 +19,10 @@ export default function Faq() {
         </a>
       </p>
 
-      <div className="mt-4 flex w-full items">
-        <Accordion selectionMode="single">
+      <div className="mt-4 flex w-full">
+        <Accordion selectionMode="multiple">
           <AccordionItem
+            className=""
             key="1"
             aria-label="Accordion 1"
             title="Is the app free?"
@@ -67,11 +68,11 @@ export default function Faq() {
           </AccordionItem>
         </Accordion>
       </div>
-      <div className="justify-center items-center mt-4">
-        <h2 className="text-4xl text-center hover:text-purple-500 transition-colors duration-200 hover:shadow-lg">
+      <div className="justify-center items-center mt-4 flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-5">
+        <h2 className="text-4xl text-center hover:text-purple-500 transition-colors duration-200 hover:shadow-lg mt-4">
           Ready to get started?
         </h2>
-        <div className="flex justify-center items-center mt-4 space-x-5 z-10">
+        <div className="flex flex-col sm:flex-row justify-center items-center mt-4 space-y-4 sm:space-y-0 sm:space-x-5 z-10">
           <a
             href="https://apps.apple.com/your-app-url"
             target="_blank"
@@ -79,7 +80,7 @@ export default function Faq() {
             className="hover:scale-105 transition-transform duration-200"
           >
             <img
-              className="w-32 h-auto"
+              style={{ width: "200px" }}
               src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
               alt="Download on the App Store"
             />
@@ -91,8 +92,8 @@ export default function Faq() {
             className="hover:scale-105 transition-transform duration-200"
           >
             <img
-              className="w-32 h-auto"
-              src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+              style={{ width: "230px" }}
+              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
               alt="Get it on Google Play"
             />
           </a>

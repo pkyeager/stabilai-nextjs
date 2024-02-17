@@ -26,7 +26,7 @@ export default function Hero() {
           className="hover:scale-105 transition-transform duration-200"
         >
           <img
-            className="w-32 h-auto"
+            style={{ width: "200px", height: "" }}
             src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
             alt="Download on the App Store"
           />
@@ -38,8 +38,8 @@ export default function Hero() {
           className="hover:scale-105 transition-transform duration-200"
         >
           <img
-            className="w-32 h-auto"
-            src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
+            style={{ width: "230px", height: "100px" }}
+            src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
             alt="Get it on Google Play"
           />
         </a>
