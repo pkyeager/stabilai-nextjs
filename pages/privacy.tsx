@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
+import "../styles/globals.css";
 
 export default function Privacy() {
   return (
@@ -407,7 +408,7 @@ export default function Privacy() {
       </p>
 
       <p>
-        If you’re logged in to your YouTube account, YouTube allows you to
+        If you are logged in to your YouTube account, YouTube allows you to
         associate your browsing behavior directly with your personal profile.
         You can prevent this by logging out of your YouTube account.
       </p>

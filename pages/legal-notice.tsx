@@ -5,18 +5,13 @@ import React from "react";
 import Link from "next/link";
 import Footer from "@/components/footer";
 import Header from "@/components/header";
-
+import "../styles/globals.css";
 
 export default function LegalNotice() {
   return (
-    <div className="bg-zinc-900 text-white flex flex-col items-center justify-center h-screen w-screen fixed top-0 left-0">
-      {/* <Header /> */}
-      <Link href="/" className="flex items-center justify-center w-full">
-        <h2 className="text-2xl font-bold mb-8 self-center sm:self-start sm:text-left">
-          stabil.ai
-        </h2>
-      </Link>
-      <p className="text-2xl font-bold mb-8 self-center sm:self-start sm:text-left">
+    <div className="bg-zinc-900 text-white flex-1 w-screen h-screen p-12 text-center">
+      <Header />
+      <p className="text-2xl mb-8 self-center sm:self-start sm:text-center">
         stabil.ai is a product of{" "}
         <a
           href="http://www.yeager.gmbh"
