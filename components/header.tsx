@@ -19,7 +19,7 @@ export default function Header() {
                     </svg>
                 </button>
                 {isNavVisible && (
-                    <div className={`absolute top-0 right-0 w-full h-full bg-gray-900 flex flex-col p-6 transition-transform duration-500 ease-out-cubic z-50 ${isNavVisible ? '' : 'transform translate-x-full'}`}>
+                    <div className={`absolute top-0 right-0 w-full h-full bg-zinc-900 flex flex-col p-6 transition-transform duration-500 ease-out-cubic z-50 ${isNavVisible ? '' : 'transform translate-x-full'}`}>
                         <button onClick={toggleNav} className="mb-4 self-end">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" className="h-6 w-6 text-white">
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
