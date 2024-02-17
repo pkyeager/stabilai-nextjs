@@ -6,11 +6,11 @@ import "../styles/globals.css";
 
 export default function Privacy() {
   return (
-    <div>
+    <div className="text-white flex-1 w-screen h-full bg-zinc-900 p-12 space-y-2">
       <Header />
-      <h1>Privacy Policy</h1>
-      <h2>1. An overview of data protection</h2>
-      <p>General information</p>
+      <h1 className="text-2xl font-bold">Privacy Policy</h1>
+      <h2 className="font-bold">1. An overview of data protection</h2>
+      <p className="font-bold">General information</p>
       <p>
         The following information will provide you with an easy to navigate
         overview of what will happen with your personal data when you visit this
@@ -19,8 +19,10 @@ export default function Privacy() {
         matter of data protection, please consult our Data Protection
         Declaration, which we have included beneath this copy.
       </p>
-      <h2>Data collection on this website</h2>
-      <h3>Who is responsible for the data collection on this website?</h3>
+      <h2 className="font-bold">Data collection on this website</h2>
+      <h3 className="font-bold">
+        Who is responsible for the data collection on this website?
+      </h3>
 
       <p>
         Data processing on this website is carried out by the website operator.
@@ -29,7 +31,7 @@ export default function Privacy() {
         declaration.
       </p>
 
-      <h3>How do we collect your data?</h3>
+      <h3 className="font-bold">How do we collect your data?</h3>
 
       <p>
         Some data are collected when you provide it to us. This could, for
@@ -43,14 +45,16 @@ export default function Privacy() {
         data are collected automatically as soon as you enter our website.
       </p>
 
-      <h3>What do we use your data for?</h3>
+      <h3 className="font-bold">What do we use your data for?</h3>
 
       <p>
         Part of the data is collected to ensure the proper functioning of the
         website. Other data can be used to analyze how visitors use the site.
       </p>
 
-      <h3>What rights do you have regarding your data?</h3>
+      <h3 className="font-bold">
+        What rights do you have regarding your data?
+      </h3>
 
       <p>
         You always have the right to request information about your stored data,
@@ -62,7 +66,9 @@ export default function Privacy() {
         complaint with the competent regulatory authorities.
       </p>
 
-      <h2>2. Hosting and Content Delivery Network (CDN)</h2>
+      <h2 className="font-bold">
+        2. Hosting and Content Delivery Network (CDN)
+      </h2>
       <p>
         External Hosting
         <br />
@@ -86,8 +92,10 @@ export default function Privacy() {
         to such data.
       </p>
 
-      <h2>2. General information and mandatory information</h2>
-      <h3>Data protection</h3>
+      <h2 className="font-bold">
+        2. General information and mandatory information
+      </h2>
+      <h3 className="font-bold">Data protection</h3>
       <p>
         The operators of this website take the protection of your personal data
         very seriously. We treat your personal data as confidential and in
@@ -107,7 +115,9 @@ export default function Privacy() {
         of your data from third-party access is not possible.
       </p>
 
-      <h3>Notice concerning the party responsible for this website</h3>
+      <h3 className="font-bold">
+        Notice concerning the party responsible for this website
+      </h3>
       <p>
         The party responsible for processing data on this website is:
         <br />
@@ -133,7 +143,9 @@ export default function Privacy() {
         personal data (names, email addresses, etc.).
       </p>
 
-      <h3>Revocation of your consent to the processing of your data</h3>
+      <h3 className="font-bold">
+        Revocation of your consent to the processing of your data
+      </h3>
       <p>
         Many data processing operations are only possible with your express
         consent. You may revoke your consent at any time with future effect. An
@@ -141,7 +153,7 @@ export default function Privacy() {
         before we receive your request may still be legally processed.
       </p>
 
-      <h3>Duration of Storage</h3>
+      <h3 className="font-bold">Duration of Storage</h3>
       <p>
         The data will be stored for as long as it is necessary to fulfill the
         purpose for which it was collected. This is generally the case for the
@@ -151,7 +163,9 @@ export default function Privacy() {
         fulfilled.
       </p>
 
-      <h3>Note on data transfer to the USA and other third countries</h3>
+      <h3 className="font-bold">
+        Note on data transfer to the USA and other third countries
+      </h3>
       <p>
         Among other things, our website includes tools from companies based in
         the USA or other third third countries that are not secure under data
@@ -168,7 +182,9 @@ export default function Privacy() {
         influence on these processing activities.
       </p>
 
-      <h3>Revocation of your consent to the processing of your data</h3>
+      <h3 className="font-bold">
+        Revocation of your consent to the processing of your data
+      </h3>
       <p>
         Many data processing operations are only possible with your express
         consent. You may revoke your consent at any time with future effect. An
@@ -176,7 +192,7 @@ export default function Privacy() {
         before we receive your request may still be legally processed.
       </p>
 
-      <h3>
+      <h3 className="font-bold">
         Right to object to data collection in special cases and to direct
         marketing (Art. 21 DSGVO)
       </h3>
@@ -201,7 +217,9 @@ export default function Privacy() {
         (OBJECTION PURSUANT TO ARTICLE 21 (2) DSGVO).
       </p>
 
-      <h3>Right to file complaints with regulatory authorities</h3>
+      <h3 className="font-bold">
+        Right to file complaints with regulatory authorities
+      </h3>
       <p>
         If there has been a breach of data protection legislation, the person
         affected may file a complaint with the competent regulatory authorities.
@@ -209,6 +227,7 @@ export default function Privacy() {
         protection legislation is the data protection officer of the German
         state in which our company is headquartered. A list of data protection
         officers and their contact details can be found at the following link:
+        {" "}
         <a
           href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
           target="_blank"
@@ -219,7 +238,7 @@ export default function Privacy() {
         </a>
       </p>
 
-      <h3>Right to data portability</h3>
+      <h3 className="font-bold">Right to data portability</h3>
       <p>
         You have the right to have data which we process based on your consent
         or in fulfillment of a contract automatically delivered to yourself or
@@ -228,7 +247,7 @@ export default function Privacy() {
         be done to the extent technically feasible.
       </p>
 
-      <h3>Information, deletion and correction</h3>
+      <h3 className="font-bold">Information, deletion and correction</h3>
       <p>
         Within the scope of the applicable legal provisions, you have the right
         to obtain information free of charge at any time about your stored
@@ -238,7 +257,7 @@ export default function Privacy() {
         at the address given in the legal notice.
       </p>
 
-      <h3>Right to restriction of processing</h3>
+      <h3 className="font-bold">Right to restriction of processing</h3>
       <p>
         You have the right to request the restriction of the processing of your
         personal data. You can contact us at any time at the address given in
@@ -280,8 +299,8 @@ export default function Privacy() {
         of important public interest of the European Union or a Member State.
       </p>
 
-      <h2>4. Data Collection on this Website</h2>
-      <h3>Cookies</h3>
+      <h2 className="font-bold">4. Data Collection on this Website</h2>
+      <h3 className="font-bold">Cookies</h3>
       <p>
         Our website uses cookies. Cookies are small text files that are stored
         on your computer by your browser. Cookies help us to make our website
@@ -314,7 +333,7 @@ export default function Privacy() {
         stored, they will be treated separately in this privacy policy.
       </p>
 
-      <h3>Server log files</h3>
+      <h3 className="font-bold">Server log files</h3>
 
       <p>These data will not be combined with data from other sources.</p>
 
@@ -324,7 +343,7 @@ export default function Privacy() {
         a contract.
       </p>
 
-      <h3>Contact form</h3>
+      <h3 className="font-bold">Contact form</h3>
 
       <p>
         Should you send us questions via the contact form, we will collect the
@@ -358,8 +377,8 @@ export default function Privacy() {
         data on without your consent.
       </p>
 
-      <h2>Plugins and Tools</h2>
-      <h3>Google Web Fonts</h3>
+      <h2 className="font-bold">Plugins and Tools</h2>
+      <h3 className="font-bold">Google Web Fonts</h3>
       <p>
         For this purpose, your browser has to establish a direct connection to
         Google servers. Google thus becomes aware that our web page was accessed
@@ -374,7 +393,7 @@ export default function Privacy() {
       </p>
 
       <p>
-        Further information about handling user data, can be found at
+        Further information about handling user data, can be found at {" "}
         <a
           href="https://developers.google.com/fonts/faq"
           target="_blank"
@@ -383,7 +402,7 @@ export default function Privacy() {
         >
           https://developers.google.com/fonts/faq
         </a>
-        and in Google’s privacy policy at
+        {" "} and in Google’s privacy policy at {" "}
         <a
           href="https://www.google.com/policies/privacy/"
           target="_blank"
@@ -394,7 +413,7 @@ export default function Privacy() {
         </a>
       </p>
 
-      <h3>Youtube</h3>
+      <h3 className="font-bold">Youtube</h3>
       <p>
         Our website uses plugins from YouTube, which is operated by Google. The
         operator of the pages is YouTube LLC, 901 Cherry Ave., San Bruno, CA
@@ -417,7 +436,7 @@ export default function Privacy() {
         YouTube is used to help make our website appealing. This constitutes a
         justified interest pursuant to Art. 6 (1) (f) DSGVO. Further information
         about handling user data, can be found in the data protection
-        declaration of YouTube under
+        declaration of YouTube under {""}
         <a
           href="https://www.google.de/intl/de/policies/privacy"
           target="_blank"
