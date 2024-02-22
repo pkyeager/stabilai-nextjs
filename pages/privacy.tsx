@@ -6,7 +6,7 @@ import "../styles/globals.css";
 
 export default function Privacy() {
   return (
-    <div className="text-white flex-1 w-screen h-full bg-zinc-900 p-12 space-y-2">
+    <div className="text-white flex-1 w-full h-full bg-zinc-900 p-12 space-y-2 overflow-hidden">
       <Header />
       <h1 className="text-2xl font-bold">Privacy Policy</h1>
       <h2 className="font-bold">1. An overview of data protection</h2>
@@ -226,8 +226,7 @@ export default function Privacy() {
         The competent regulatory authority for matters related to data
         protection legislation is the data protection officer of the German
         state in which our company is headquartered. A list of data protection
-        officers and their contact details can be found at the following link:
-        {" "}
+        officers and their contact details can be found at the following link:{" "}
         <a
           href="https://www.bfdi.bund.de/DE/Infothek/Anschriften_Links/anschriften_links-node.html"
           target="_blank"
@@ -393,7 +392,7 @@ export default function Privacy() {
       </p>
 
       <p>
-        Further information about handling user data, can be found at {" "}
+        Further information about handling user data, can be found at{" "}
         <a
           href="https://developers.google.com/fonts/faq"
           target="_blank"
@@ -401,8 +400,8 @@ export default function Privacy() {
           className="text-blue-500"
         >
           https://developers.google.com/fonts/faq
-        </a>
-        {" "} and in Google’s privacy policy at {" "}
+        </a>{" "}
+        and in Google’s privacy policy at{" "}
         <a
           href="https://www.google.com/policies/privacy/"
           target="_blank"

@@ -9,7 +9,7 @@ import "../styles/globals.css";
 
 export default function LegalNotice() {
   return (
-    <div className="bg-zinc-900 text-white flex-1 w-full h-full p-12 text-center">
+    <div className="bg-zinc-900 text-white flex-1 w-full h-full p-12 text-center overflow-hidden">
       <Header />
       <p className="text-2xl mb-8 self-center sm:self-start sm:text-center">
         stabil.ai is a product of{" "}
@@ -22,7 +22,7 @@ export default function LegalNotice() {
           Yeager GmbH
         </a>
       </p>
-      <h1>Legal Notice</h1>
+      <h1 className="text-4xl font-bold">Legal Notice</h1>
       <h2>Information pursuant to Sect. 5 German Telemedia Act (TMG)</h2>
       <p className="mb-4">
         Yeager GmbH
