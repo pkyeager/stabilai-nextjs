@@ -9,7 +9,7 @@ import "../styles/globals.css";
 
 export default function LegalNotice() {
   return (
-    <div className="bg-zinc-900 text-white flex-1 w-screen h-screen p-12 text-center">
+    <div className="bg-zinc-900 text-white flex-1 w-full h-full p-12 text-center">
       <Header />
       <p className="text-2xl mb-8 self-center sm:self-start sm:text-center">
         stabil.ai is a product of{" "}
