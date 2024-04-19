@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
+import {Button} from "@nextui-org/react";
 
 export default function Header() {
     const [isNavVisible, setNavVisible] = useState(false);
 
     const toggleNav = () => {
         setNavVisible(!isNavVisible);
+    };
+
+    const handleFeedbackButton = () => {
+        window.location.href = "mailto:admin@stabil.ai?subject=Feedback to the App Stabil.ai&body=Enter your Feedback here, we are happy to hear from you!";
     };
 
     return (
@@ -31,16 +36,22 @@ export default function Header() {
                                 <li><a href="#" className="text-4xl text-white">App Store</a></li>
                                 <li><a href="#" className="text-4xl text-white">Google Play</a></li>
                             </ul>
+
                         </nav>
                     </div>
                 )}
             </div>
             <div className="hidden lg:flex">
                 <nav>
-                    <ul className="flex space-x-4">
+                    <ul className="flex space-x-4 items-center">
                         <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">Learn More</a></li>
                         <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">App Store</a></li>
                         <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">Google Play</a></li>
+                        <Button
+                            className="bg-purple-600 text-white my-auto"
+                            onClick={handleFeedbackButton}>
+                            <p>Give Feedback</p>
+                        </Button>
                     </ul>
                 </nav>
             </div>

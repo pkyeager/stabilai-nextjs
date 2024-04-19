@@ -48,7 +48,7 @@ export default function LegalNotice() {
 
       <h2>Contact</h2>
       <p className="mb-4">
-        Phone: +49 1511 7629322
+        Phone: +49 151 72250184
         <br />
         E-mail: management@yeager.gmbh
       </p>
