@@ -43,7 +43,8 @@ export default function Faq() {
           >
             Absolutely! Our user-friendly interface and beginner-friendly
             workouts make it perfect for those new to fitness. Get started on
-            your journey hassle-free!
+            your journey hassle-free! We plan to add exercises videos and more to help you get started, But we do
+              recommend you to consult with a professional or watch tutorials on how to do the exercises.
           </AccordionItem>
           <AccordionItem
             key="3"
@@ -54,9 +55,10 @@ export default function Faq() {
               </span>
             }
           >
-            We stand out with our commitment to providing a premium experience
-            at no cost. Enjoy personalized plans, advanced features, and a
-            supportive community—all for free!
+           This is an app, from powerlifters for powerlifters. We aim make your training more efficient and effective.
+           We focused on individualized training and real-time feedback and adjustments. We wanted to create an app that
+           is easy to use. We do not want to overwhelm you with too many features or charge you too much. We want to make
+           powerlifting more accessible to everyone.
           </AccordionItem>
           <AccordionItem
             key="4"
@@ -67,9 +69,8 @@ export default function Faq() {
               </span>
             }
           >
-            Of course! Our app includes comprehensive progress tracking
-            features, allowing you to monitor your performance and see your
-            improvements over time. Stay motivated with tangible results!
+          Yes you can! On your dashboard you can see your SBD total progress over time and some other stats.
+
           </AccordionItem>
           <AccordionItem
             key="5"
@@ -81,19 +82,18 @@ export default function Faq() {
               </span>
             }
           >
-            Absolutely! Connect with other users, share experiences, and receive
-            support from our vibrant community—all within our free app. It is
-            fitness, friendship, and fun, all in one place!
+           We plan to add a community feature in the future. For now you can add friends and see their progress. What do you think
+           about a discord server? Let us know!
           </AccordionItem>
         </Accordion>
       </div>
       <div className="justify-center items-center mt-4 flex flex-col sm:flex-col space-y-4 sm:space-y-0 sm:space-x-5">
-        <h2 className="text-4xl text-center hover:text-purple-500 transition-colors duration-200 hover:shadow-lg mt-4">
+        <h2 className="text-4xl text-center hover:text-purple-500 transition-colors duration-200 hover:shadow-lg mt-4 mb-4">
           Ready to get started?
         </h2>
         <div className="flex flex-col sm:flex-row justify-center items-center mt-4 space-y-4 sm:space-y-0 sm:space-x-5 z-10">
           <a
-            href="https://apps.apple.com/your-app-url"
+            href="https://apps.apple.com/app/stabil-ai/id6496847994"
             target="_blank"
             rel="noopener noreferrer"
             className="hover:scale-105 transition-transform duration-200"
@@ -110,11 +110,11 @@ export default function Faq() {
             rel="noopener noreferrer"
             className="hover:scale-105 transition-transform duration-200"
           >
-            <img
-              style={{ width: "230px" }}
-              src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"
-              alt="Get it on Google Play"
-            />
+            {/*<img*/}
+            {/*  style={{ width: "230px" }}*/}
+            {/*  src="https://play.google.com/intl/en_us/badges/static/images/badges/en_badge_web_generic.png"*/}
+            {/*  alt="Get it on Google Play"*/}
+            {/*/>*/}
           </a>
         </div>
       </div>

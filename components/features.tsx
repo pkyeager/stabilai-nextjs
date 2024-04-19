@@ -3,7 +3,9 @@
 import React from "react";
 
 export default function Features() {
-  const phoneImgPath = "/phone1.png";
+  const dashboardImgPath = "/dashboard.png";
+  const workoutImgPath = "/workout.png";
+  const socialImgPath = "/social.png";
 
   return (
     <div className="flex flex-col h-full">
@@ -21,7 +23,7 @@ export default function Features() {
             goals.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4 sm:p-8" />
+        <img src={dashboardImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4 sm:p-8" />
       </section>
 
       <section className="flex flex-col sm:flex-row-reverse items-center justify-center h-full sm:h-auto py-10 sm:py-20 bg-zinc-900">
@@ -36,7 +38,7 @@ export default function Features() {
             every rep.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-last sm:order-none p-4 sm:p-8" />
+        <img src={workoutImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-last sm:order-none p-4 sm:p-8" />
       </section>
 
       <section className="flex flex-col sm:flex-row items-center justify-center h-full sm:h-auto py-10 sm:py-20">
@@ -51,7 +53,7 @@ export default function Features() {
             growth.
           </p>
         </div>
-        <img src={phoneImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4 sm:p-8" />
+        <img src={socialImgPath} alt="Phone" className="w-full sm:w-1/4 h-auto hover:scale-105 transition-transform duration-200 hover:shadow-lg order-first sm:order-none p-4 sm:p-8" />
       </section>
     </div>
   );

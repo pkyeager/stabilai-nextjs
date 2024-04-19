@@ -34,7 +34,7 @@ export default function Header() {
                             <ul className="space-y-4">
                                 <li><a href="#" className="text-4xl text-white">Learn More</a></li>
                                 <li><a href="#" className="text-4xl text-white">App Store</a></li>
-                                <li><a href="#" className="text-4xl text-white">Google Play</a></li>
+                                <li><p className="text-bold hover:font-bold" onClick={handleFeedbackButton}>Give us Feedback</p></li>
                             </ul>
 
                         </nav>
@@ -45,8 +45,7 @@ export default function Header() {
                 <nav>
                     <ul className="flex space-x-4 items-center">
                         <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">Learn More</a></li>
-                        <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">App Store</a></li>
-                        <li><a href="#" className="hover:text-purple-600 transition-colors duration-200">Google Play</a></li>
+                        <li><a href="https://apps.apple.com/app/stabil-ai/id6496847994" className="hover:text-purple-600 transition-colors duration-200">App Store</a></li>
                         <Button
                             className="bg-purple-600 text-white my-auto"
                             onClick={handleFeedbackButton}>

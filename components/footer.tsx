@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-zinc-900 text-white py-10 px-5 sm:px-8 clear-both mt-28">
+    <footer className="bg-zinc-900 text-white py-10 px-5 sm:px-8 clear-both mt-28 ">
       <div className="flex flex-col sm:flex-row flex-wrap justify-center sm:justify-between items-start text-center sm:text-left">
         <Link legacyBehavior href="/">
           <a className="text-2xl font-bold mb-8 self-center sm:self-start sm:text-left hover:text-purple-500">
@@ -35,7 +35,7 @@ export default function Footer() {
               </a>
             </li>
             <li>
-              <a href="#" className="hover:underline">
+              <a href="mailto:admin@stabil.ai" className="hover:underline">
                 Contact Us
               </a>
             </li>
